@@ -1,0 +1,35 @@
+.poster{
+    /* border: 2px solid red; */
+    width: 200px;
+    margin: auto;
+}
+.cardlist{
+    border: 2px solid red;
+    display: flex;
+justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 30px;
+  flex-direction: column;
+  border-radius:4%;
+  margin-top: 90px;
+}
+.linkdata{
+    text-decoration: none;
+}
+.cardtitle{
+  color: black;
+ text-decoration: none;
+   
+    font-weight: lighter;
+    font-size: 20px;
+}
+.cardprice{
+    color: black;
+    font-weight: bold;
+    font-size: 20px; 
+    color: rgb(4, 138, 153);
+}
+.cardcat{
+    color: black;
+}
