@@ -11,7 +11,7 @@ import {
     Heading,
     SimpleGrid,
     StackDivider,
-    useColorModeValue,
+    // useColorModeValue,
     List,
     ListItem,
   } from '@chakra-ui/react';
@@ -23,13 +23,14 @@ import {
     return (
       <Container maxW={'7xl'} display="flex" >
         <SimpleGrid
-         border="1px solid red" 
+          // border="1px solid red" 
+       marginTop={60}
          display="flex"
          justifyContent="space-around"
           columns={{ base: 1, lg: 2 }}
           spacing={{ base: 8, md: 10 }}
           py={{ base: 18, md: 24 }}>
-          <Flex border="1px solid red" width="380px">
+          <Flex  width="380px">
             <Image
          
               rounded={'md'}
@@ -42,7 +43,7 @@ import {
               h={{ base: '100%', sm: '400px', lg: '500px' }}
             />
           </Flex>
-          <Stack border="1px solid red"  spacing={{ base: 6, md: 10 }}>
+          <Stack spacing={{ base: 6, md: 10 }}>
             <Box as={'header'}>
               <Heading
                 lineHeight={1.1}
@@ -95,20 +96,15 @@ import {
             </Stack>
           </Stack>
           <Button
-            rounded={'none'}
-            w={'full'}
-            mt={8}
-            size={'lg'}
-            py={'7'}
-            bg={useColorModeValue('gray.900', 'gray.50')}
-            color={useColorModeValue('white', 'gray.900')}
-            textTransform={'uppercase'}
-            _hover={{
-              transform: 'translateY(2px)',
-              boxShadow: 'lg',
-            }}>
-            Add to cart
-          </Button>
+  textTransform={'uppercase'}
+  _hover={{
+    transform: 'translateY(2px)',
+    boxShadow: 'lg',
+  }}
+  style={{ width: 'auto', height: '40px',marginTop:'300px',marginRight:"100px" }}
+>
+  Add to cart
+</Button>
         </SimpleGrid>
       </Container>
     );

@@ -4,7 +4,7 @@
     margin: auto;
 }
 .cardlist{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
 justify-content: space-between;
   align-items: center;
